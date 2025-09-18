@@ -8,7 +8,7 @@ const tempChefDirectory = [
         img: acaLogo,
         title: "Honorary Advisor of ACA",
         bio: "World Renowned Celebrity Chef, Television Cooking Show Host, Cookbook Author",
-        link: "/chefs/martin-yan"
+        link: "martin-yan"
     },
     {
 
@@ -16,14 +16,14 @@ const tempChefDirectory = [
         img: acaLogo,
         title: "Honorary Advisor of ACA",
         bio: "Renowned Thai-American chef and star of Iron Chef, Cookbook Author, Restauranteur",
-        link: ""
+        link: "jet-tila"
     },
     {
         name: "Shirley Cheng",
         img: acaLogo,
         title: "Vice President of ACA Central Region",
         bio: "Retired Professor of CIA/HAAC, Asian Culinary Education Expert",
-        link: ""
+        link: "shirley-cheng"
 
     },
     {
@@ -31,14 +31,14 @@ const tempChefDirectory = [
         img: acaLogo,
         title: "Vice President of ACA Northeast Region",
         bio: "Multiple national gold medalist, Executive Sous Chef at the University of Massachusetts",
-        link: ""
+        link: "anthony-jung"
     },
     {
         name: "William Yee",
         img: acaLogo,
         title: "Vice President of ACA Western Region",
         bio: "Acclaimed California TV culinary showhost, past President of Le Cordon Bleu Alumni Association",
-        link: ""
+        link: "william-yee"
     }
 ]
 
@@ -47,10 +47,10 @@ function Chefpages() {
     return (
     <div className="content">
         <h1>Active Chef Directory</h1>
-        {tempChefDirectory.map(({name, title, img, bio, link}, idx) => {
+        {tempChefDirectory.map(({name, title, img, bio, link}) => {
             return (
-            <Link to={link} style={{textDecoration: 'none'}}>
-                <div key={idx} className="chef-line">
+            <Link to={`/chefs/${link}`} style={{textDecoration: 'none'}}>
+                <div key={link} className="chef-line">
                     <div className="chef-line--pi">
                         <img className="chef-line--img"
                         src={img} alt="poggies"/>
