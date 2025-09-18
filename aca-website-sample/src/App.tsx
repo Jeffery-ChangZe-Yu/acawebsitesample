@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import Chefpages from './components/Chefpages/Chefpages';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Chefpage from './components/Chefpages/Chefpage/Chefpage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/chefs' element={<Chefpages />} />
+        <Route path='/chefs/:name' element={<Chefpage />} />
         <Route path='/about' element={<About />} />
       </Routes>
       </div>

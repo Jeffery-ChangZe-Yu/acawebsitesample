@@ -49,7 +49,7 @@ function Chefpages() {
         <h1>Active Chef Directory</h1>
         {tempChefDirectory.map(({name, title, img, bio, link}, idx) => {
             return (
-            <Link to={link}>
+            <Link to={link} style={{textDecoration: 'none'}}>
                 <div key={idx} className="chef-line">
                     <div className="chef-line--pi">
                         <img className="chef-line--img"
