@@ -1,38 +1,92 @@
+:root {
+  --main-bg-color: white;
+  --main-text-color: black;
+  --secondary-text-color: white;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navbar {
+  position: fixed;
+  height: 10vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar--top {
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentdiv {
+  padding-top: 10%;
+}
+
+.navbar--logo {
+  height: 10vh;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-flow: column nowrap;
+}
+
+.hero-splash-page {
+  background-image: url("./media/aca-splash-image.png");
+  background-color: aliceblue;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  color: var(--secondary-text-color);
+  margin: 1%;
+}
+
+.hero-text--large {
+  font-size: 7vh;
+}
+
+.chef-line {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: aqua;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10px;
+}
+
+.chef-line--pi {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.chef-line--img {
+  border-radius: 100%;
+  border: 1px solid;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.chef-line--profile {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
