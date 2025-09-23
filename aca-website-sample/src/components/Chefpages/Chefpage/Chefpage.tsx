@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router'
 import chefs from "../../../data/chefs.json";
+import logo from '../../../media/aca-logo.png'
 
 export default function Chefpage() {
     const { link } = useParams();
@@ -11,10 +12,19 @@ export default function Chefpage() {
     }
 
     return (
-        <div className='content'>
-            <h2>{chef.name}</h2>
-            <p>{chef.bio}</p>
-            <img src={chef.img} alt={`Chef ${chef.name}`} />
+        <div className='content--full horizontal'>
+            <div className='chef-page--media'>
+                <img src={logo} alt={`Chef ${chef.name}`} />
+            </div>
+            <div className='chef-page--text'>
+                <div className='chef-page--text-header'>
+                    <h2>{chef.title}</h2>
+                    <h1>{chef.name}</h1>
+                </div>
+                <div className='chef-page--text-body'>
+                    <p>{chef.bio}</p>
+                </div>
+            </div>
         </div>
     )
 }

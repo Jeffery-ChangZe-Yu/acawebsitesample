@@ -2,22 +2,16 @@
   --main-bg-color: white;
   --main-text-color: black;
   --secondary-text-color: white;
+  --navbar-height: 10vh;
 }
 
 .App {
   text-align: center;
 }
 
-.horizontal {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    width: 100vw;
-}
-
 .navbar {
   position: fixed;
-  height: 10vh;
+  height: var(--navbar-height);
   align-items: center;
   background: rgb(255, 255, 255);
   z-index: 1000;
@@ -39,6 +33,21 @@
   flex-flow: column nowrap;
   position: relative;
   top: 25vh;
+}
+
+.content--full {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: calc(var(--navbar-height));
+}
+
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100vw;
 }
 
 .hero-splash-page {
@@ -88,4 +97,32 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+}
+
+.chef-page--media {
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  left: 0;
+  background-color: antiquewhite;
+}
+
+.chef-page--text {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  left: 50vw;
+}
+
+.chef-page--text-header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.chef-page--text-body {
+
 }
