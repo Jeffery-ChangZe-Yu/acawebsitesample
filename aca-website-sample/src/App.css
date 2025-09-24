@@ -12,6 +12,7 @@
 .navbar {
   position: fixed;
   height: var(--navbar-height);
+  width: 100vw;
   align-items: center;
   background: rgb(255, 255, 255);
   z-index: 1000;
@@ -33,6 +34,8 @@
   flex-flow: column nowrap;
   position: relative;
   top: 25vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .content--full {
@@ -48,15 +51,6 @@
     flex-flow: row nowrap;
     justify-content: space-evenly;
     width: 100vw;
-}
-
-.hero-splash-page {
-  background-image: url("./media/aca-splash-image.png");
-  background-color: aliceblue;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero-text {
@@ -125,4 +119,19 @@
 
 .chef-page--text-body {
 
+}
+
+.carousel {
+  height: 75vh;
+  position: relative;
+  top: var(--navbar-height);
+}
+
+.carousel .carousel-item {
+  height: 80vh;
+}
+.carousel-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
