@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import acaGroupPhoto from '../../media/aca-chef-group-photo.jpg';
 import acaDemo from '../../media/aca-demo.jpg';
+import acaStage from '../../media/aca-splash-image.png';
 
 
 const carouselSlideContent = [
@@ -14,7 +15,7 @@ const carouselSlideContent = [
     },
     text: {
       header: "ACA at ACF",
-      body: "The ACA attended the 2025 ACF National Convetion in Las Vegas."
+      body: "The ACA attended the 2025 ACF National Convetion in Las Vegas"
     }
   },
     {
@@ -26,7 +27,19 @@ const carouselSlideContent = [
     },
     text: {
       header: "ACF Demo",
-      body: "ACA Chefs demonstrated wok cooking in front of crowds."
+      body: "ACA Chefs demonstrated wok cooking in front of crowds"
+    }
+  },
+  {
+    id: "chef-stage",
+    interval: 4000,
+    image: {
+      url: acaStage,
+      caption: "ACA Chefs stand on stage"
+    },
+    text: {
+      header: "ACA Debuts at ACF",
+      body: "ACA Chefs pose on stage"
     }
   },
 ]
