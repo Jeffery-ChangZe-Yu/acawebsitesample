@@ -72,12 +72,14 @@
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10px;
+  width: 75vw;
 }
 
-.chef-line--pi {
+.chef-line--pic {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-self: left;
 }
 
 .chef-line--img {
@@ -98,7 +100,10 @@
   width: 50vw;
   position: absolute;
   left: 0;
-  background-color: antiquewhite;
+}
+
+.chef-page--pic {
+  max-width: 50vw;
 }
 
 .chef-page--text {
@@ -108,6 +113,7 @@
   width: 50vw;
   position: absolute;
   left: 50vw;
+  padding: 5vw;
 }
 
 .chef-page--text-header {
@@ -115,6 +121,7 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
+  align-items: center;
 }
 
 .chef-page--text-body {

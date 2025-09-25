@@ -1,6 +1,8 @@
 import React from "react";
 import acaLogo from "../../media/aca-logo.png";
 import { Link } from "react-router";
+import shirleyChengPhoto from "../../media/shirley-cheng-photo-cropped.jpg";
+import shirleyChengPhotoFull from "../../media/shirley-cheng-photo.jpg";
 
 const tempChefDirectory = [
     {
@@ -13,14 +15,14 @@ const tempChefDirectory = [
     {
 
         name: "Jet Tila",
-        img: acaLogo,
+        img: shirleyChengPhotoFull,
         title: "Honorary Advisor of ACA",
         bio: "Renowned Thai-American chef and star of Iron Chef, Cookbook Author, Restauranteur",
         link: "jet-tila"
     },
     {
         name: "Shirley Cheng",
-        img: acaLogo,
+        img: shirleyChengPhoto,
         title: "Vice President of ACA Central Region",
         bio: "Retired Professor of CIA/HAAC, Asian Culinary Education Expert",
         link: "shirley-cheng"
@@ -52,7 +54,7 @@ function Chefpages() {
             return (
             <Link to={`/chefs/${link}`} style={{textDecoration: 'none'}}>
                 <div key={link} className="chef-line">
-                    <div className="chef-line--pi">
+                    <div className="chef-line--pic">
                         <img className="chef-line--img"
                         src={img} alt="poggies"/>
                         <h2>{name}</h2>
